@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification</title>
+    <link rel="stylesheet" href="authentification.css">
+    <script src="authentification.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="innercontainer">
+            <h1 id="heading">Register</h1>
+            <input id="username" type="text" name="username" placeholder="username" onchange="setvalue(event)">
+            <input id="email" type="text" name="email" placeholder="email" onchange="setvalue(event)">
+            <input id="password" type="password" name="password" placeholder="password" onchange="setvalue(event)">
+            <input id="confirmpassword" type="password" name="confirmpassword" placeholder="confirm password" onchange="setvalue(event)">
+            <button onclick="handlesubmit()">submit</button>
+            <span id="login" onclick="hide()">*alread have an account login</span>
+        </div>
+    </div>
+</body>
+</html>
